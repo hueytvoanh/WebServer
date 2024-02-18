@@ -27,8 +27,8 @@ Insert data to table:
 Read data from table:
     sqlite> select * from ats;
 Delete table from database:
-
+    DROP TABLE IF EXISTS ats;
 #NODE_RED
 Insert sqlite node to NODE RED
-Add database to the node: iot.db
-    DROP TABLE IF EXISTS ats;
+Add database to the node: iot.db. After deploy below the node should has green led indicator. 
+    
