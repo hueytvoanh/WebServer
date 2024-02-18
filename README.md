@@ -23,7 +23,7 @@ Check data structure of the database:
     sqlite> .schema ats OR
     sqlite> PRAGMA table_info(ats);
 Insert data to table:
-    sqlite> insert into ats values ("ATS1", 0.5, 48.3, 1.7, 48.9, "admin", datetime(CURRENT_TIMESTAMP));
+    sqlite> insert into ats values (NULL, "ATS1", 0.5, 48.3, 1.7, 48.9, "admin", datetime(CURRENT_TIMESTAMP));
 Read data from table:
     sqlite> select * from ats;
 Delete table from database:
