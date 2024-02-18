@@ -28,6 +28,8 @@ Read data from table:
     sqlite> select * from ats;
 Delete table from database:
     DROP TABLE IF EXISTS ats;
+Delete all recored data:
+    sqlite> delete * from ats;
 #NODE_RED
 Insert sqlite node to NODE RED
 Add database to the node: iot.db. After deploy below the node should has green led indicator. 
