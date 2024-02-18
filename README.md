@@ -16,4 +16,6 @@ Precondition:
 
 #DataBase
     sqlite3 iot.db
-    sqlite> create table ats (atsID text, I1 numeric, V1 numeric, I2 numeric, V2 numeric, user text, rDatetime datetime);
+    sqlite> create table ats (atsID text, I1 numeric, V1 numeric, I2 numeric, V2 numeric, userID text, rDatetime datetime); 
+Check existing tables:
+    sqlite> .tables
