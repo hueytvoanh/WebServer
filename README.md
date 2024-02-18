@@ -15,4 +15,5 @@ Precondition:
     sudo systemctl start nginx
 
 #DataBase
-sqlite3 iot.db
+    sqlite3 iot.db
+    sqlite> create table ats (rDatetime datetime, sensorID text, temp numeric);
