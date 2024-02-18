@@ -31,4 +31,14 @@ Delete table from database:
 #NODE_RED
 Insert sqlite node to NODE RED
 Add database to the node: iot.db. After deploy below the node should has green led indicator. 
+Change the db to read-write mode: sudo chmod 777 iot.db
+
+NODE RED function
+var date = new Date();
+var timestamp = date.getTime();
+timestamp = timestamp + (3600 * 1000);
+
+msg.topic = "INSERT INTO ats VALUES (NULL, \"ATS1\", 0.5, 48.3, 1.7, 48.9, \"admin\", datetime(\"now\"))";
+
+return msg;
     
