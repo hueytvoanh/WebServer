@@ -13,3 +13,6 @@ Precondition:
     root@raspberrypi:/etc/letsencrypt/live/mqttnhatnhat.duckdns.org# cp privkey.pem /etc/mosquitto/certs/
 4 Start nginx again and check
     sudo systemctl start nginx
+
+#DataBase
+sqlite3 iot.db
