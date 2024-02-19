@@ -54,4 +54,15 @@ Python code get data from sqlite database:
 	conn.close()
 
 	return [temperatures, humidities, timezone, from_date_str, to_date_str]
-    
+
+Python code for choosing column data in a table of database:
+    for record in temperatures:
+		local_timedate = arrow.get(record[0], "YYYY-MM-DD HH:mm").to(timezone)
+		time_series_adjusted_tempreratures.append(local_timedate.format('YYYY-MM-DD HH:mm'))
+		time_series_temprerature_values.append(round(record[2],2))
+
+HTML template
+     1. lab_temp.html
+     2. no_sensor.html
+     3. lab_env_db.html
+
