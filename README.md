@@ -43,4 +43,15 @@ timestamp = timestamp + (3600 * 1000);
 msg.topic = "INSERT INTO ats VALUES (NULL, \"ATS1\", 0.5, 48.3, 1.7, 48.9, \"admin\", datetime(\"now\"))";
 
 return msg;
+
+Python code get data from sqlite database:
+    conn 			    = sqlite3.connect('/var/www/lab_app/lab_app.db')
+	curs 			    = conn.cursor()
+	curs.execute("SELECT * FROM temperatures WHERE rDateTime BETWEEN ? AND ?", (from_date_utc.format('YYYY-MM-DD HH:mm'), to_date_utc.format('YYYY-MM-DD HH:mm')))
+	temperatures 	    = curs.fetchall()
+	curs.execute("SELECT * FROM humidities WHERE rDateTime BETWEEN ? AND ?", (from_date_utc.format('YYYY-MM-DD HH:mm'), to_date_utc.format('YYYY-MM-DD HH:mm')))
+	humidities 		    = curs.fetchall()
+	conn.close()
+
+	return [temperatures, humidities, timezone, from_date_str, to_date_str]
     
