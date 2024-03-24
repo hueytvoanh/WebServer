@@ -66,3 +66,7 @@ HTML template
      2. no_sensor.html
      3. lab_env_db.html
 
+sqlite3 ats_iot.db     
+create table temperatures (rDatetime datetime, sensorID text, temp numeric);
+create table humidities (rDatetime datetime, sensorID text, hum numeric);
+
