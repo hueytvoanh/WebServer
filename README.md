@@ -70,3 +70,14 @@ sqlite3 ats_iot.db
 create table temperatures (rDatetime datetime, sensorID text, temp numeric);
 create table humidities (rDatetime datetime, sensorID text, hum numeric);
 
+insert into temperatures values (datetime(CURRENT_TIMESTAMP),"1",25.10);
+insert into temperatures values (datetime(CURRENT_TIMESTAMP),"1",35.10);
+insert into temperatures values (datetime(CURRENT_TIMESTAMP),"1",45.10);
+insert into temperatures values (datetime(CURRENT_TIMESTAMP),"1",55.10);
+
+insert into humidities values (datetime(CURRENT_TIMESTAMP),"1",51.10);
+insert into humidities values (datetime(CURRENT_TIMESTAMP),"1",61.10);
+insert into humidities values (datetime(CURRENT_TIMESTAMP),"1",71.10);
+insert into humidities values (datetime(CURRENT_TIMESTAMP),"1",81.10);
+
+commit;
