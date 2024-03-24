@@ -86,3 +86,8 @@ commit;
 
 select * from temperatures;
 select * from humidities;
+
+cd /var/www/lab_app
+hello.py control Flask app 
+sudo systemctl start nginx
+systemctl restart emperor.uwsgi.service
