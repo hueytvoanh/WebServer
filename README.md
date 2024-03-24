@@ -81,3 +81,6 @@ insert into humidities values (datetime(CURRENT_TIMESTAMP),"1",71.10);
 insert into humidities values (datetime(CURRENT_TIMESTAMP),"1",81.10);
 
 commit;
+
+select * from temperatures;
+select * from humidities;
