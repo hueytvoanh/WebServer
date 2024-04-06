@@ -1,6 +1,7 @@
 # WebServer
 https://github.com/futureshocked/RaspberryPiFullStack_Raspbian
 
+systemctl restart nginx
 
 Precondition:
     - Check firewall allow port 80
