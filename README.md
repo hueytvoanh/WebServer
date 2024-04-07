@@ -1,5 +1,6 @@
 # WebServer
 https://github.com/futureshocked/RaspberryPiFullStack_Raspbian
+systemctl restart emperor.uwsgi.service
 
 systemctl restart nginx
 
